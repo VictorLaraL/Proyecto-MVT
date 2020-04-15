@@ -1,0 +1,37 @@
+{% extends "base_template.html" %}
+
+{% block title %} Index {% endblock %}
+
+{% block main %}
+
+<!-- Pagina principal tomada de: https://startbootstrap.com/snippets/full-image-header/ -->
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <h1 class="font-weight-light">Multiprocessing with Variable Task size</h1>
+                <p class="lead">Simulacion del manejo de memoria basado en el metodo MVT</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="font-weight-light">Descripcion de MVT</h2>
+        <p>Este procedimiento de buscar el bloque que mejor puede satisfacer
+            la demanda de un proceso es un problema de la asignación dinámica
+            de la memoria, el cual consiste en cómo cumplir una petición de tamaño N
+            entre una lista de bloques disponibles. </p>
+
+        <p> Inicialmente, toda la memoria está disponible para los procesos de usuario
+            y es considerada como un sólo bloque grande de memoria (un área libre o “hole”). </p>
+
+        <p> Cuando un proceso llega y necesita memoria se busca el bloque de memoria
+            suficientemente grande para este proceso. </p>
+    </div>
+</section>
+
+{% endblock %}
